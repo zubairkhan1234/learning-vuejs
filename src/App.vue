@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <Abs message="All changes had been saved"/>
+  <Form />
   <CustomComponent message="All changes had been saved"/>
   <Event/>
 </template>
@@ -9,13 +10,14 @@
 import Abs from './components/HelloWorld.vue'
 import CustomComponent from './components/CustomComponent.vue'
 import Event from './components/Event.vue'
-
+import Form from './components/Form.vue'
 export default {
   name: 'App',
   components: {
     Abs,
     CustomComponent,
-    Event
+    Event,
+    Form
   }
 }
 </script>
