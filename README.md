@@ -28,5 +28,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 <!--CustomComponent practice  -->
+created vue app and vuex app store
 
-In this file we have done practice using methods, props, methods with params
+https://www.youtube.com/watch?v=nFh7-HfODYY

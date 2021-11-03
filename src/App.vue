@@ -1,15 +1,9 @@
 <template>
 <img alt="Vue logo" src="./assets/logo.png">
-<!-- <div>
-    <span>{{$store.state.counter}}</span>
-</div>!-->
-<div>
-    <span>{{$store.state.counter}}</span>
-</div>
-<div>
-    <button v-on:click="$store.commit('increaseCounter')"> + </button>
-    <button v-on:click="$store.commit('decreaseCounter')"> - </button>
-</div>
+<Counter />
+<CounterSquare />
+<CounterButton />
+<CounterColorInput />
 <!-- <div>
     <button v-on:click="increaseCounter()"> + </button>
     <button v-on:click="decreaseCounter()"> - </button>
@@ -24,6 +18,10 @@
 export default {
     name: 'App',
     components: {
+        'Counter' : require("@/components/counter/Counter.vue").default,
+        'CounterSquare' : require("@/components/counter/CounterSquare.vue").default,
+        'CounterButton' : require("@/components/counter/CounterButton.vue").default,
+        'CounterColorInput' : require("@/components/counter/CounterColorInput.vue").default,
         // Abs,
         // CustomComponent,
         // Event,
@@ -51,7 +49,7 @@ export default {
     //     }
 
     //   },
-      
+
     // }
 }
 </script>
